@@ -21,7 +21,7 @@ Install the Python virtual environment (recommended)
 
    cd ~
    mkdir zephyr-training-nrf7002dk
-   python -m venv zephyr-training-nrf7002dk/.venv
+   python3 -m venv zephyr-training-nrf7002dk/.venv
    source zephyr-training-nrf7002dk/.venv/bin/activate
    pip install wheel west
 
@@ -31,7 +31,7 @@ Use ``west`` to initialize and install
 .. code-block:: console
 
    cd ~/zephyr-training-nrf7002dk
-   west init -m git@github.com:golioth/zephyr-training-nrf7002dk.git .
+   west init -m https://github.com/golioth/zephyr-training-nrf7002dk.git .
    west update
    west zephyr-export
    pip install -r deps/zephyr/scripts/requirements.txt
